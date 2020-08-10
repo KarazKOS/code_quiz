@@ -9,8 +9,13 @@
 .openScreen {
 }
 
+.timeEl {
+  padding: 8px;
+}
+
 #highScore {
 }
 
-#timer {
-}
+/* #timer { 
+  font-size: 30px;
+}*/

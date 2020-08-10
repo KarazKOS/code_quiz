@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Begin Head -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS Framework link -->
+    <link
+    rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+
+    <!-- Customized CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Title that shows in the browser tag -->
+    <title>Code Quiz</title>
+  </head>
+<!-- End of Head -->
+
+<!-- Begining of Body -->
+  <body>
+    
+    <!-- Uppper left corner  -->
+    <nav class="row navbar text-center navbar-light bg-light">
+      <a class="navbar-brand">Are you a code master?</a>
+    </nav>
+    <div class="container">
+      <header class="row">
+        <!-- High score element -->
+        <div class="col-sm-10 col-md-8 col-lg-6">
+          <button id="highScore" class="btn">View High Scores</button>
+        </div>
+        <!-- Timer element -->
+        <div class="col">
+          <div class="row float-right timeEl">
+            Timer: <span id="timer">75</span>
+          </div>
+        </div>
+      </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-9"></div>
+        <div class="col-3" id="timer"></div>
+      </div>
+    </div>
+    <main class="row justify-content-center">
+      <div class="px-5 col" id="intro">
+        <h2>Play the Code Quiz!</h2>
+        <p>
+          Answer the following questions about coding in 2 minutes or less. Be
+          warned! If you guess incorrectly, you lose time on the clock!
+        </p>
+        <h4>Press start to play! Good luck!</h4>
+        <button type="button" class="btn btn-danger btn-lg" id="start">
+          Start
+        </button>
+      </div>
+    </main>
+    <div class="container" id="quiz" style="display: block;">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col" id="question">
+          <h2 id="questionsTitle"></h2>
+          <br />
+          <button class="btn btn-primary questionChoice" id="choice1"></button>
+          <br />
+          <button class="btn btn-primary questionChoice" id="choice2"></button>
+          <br />
+          <button class="btn btn-primary questionChoice" id="choice3"></button>
+          <br />
+          <button class="btn btn-primary questionChoice" id="choice4"></button>
+          <div id="answerIndicator" style="display: block;">
+            <hr />
+            <p id="answerCheck"></p>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+    <div class="container" id="finalScore" style="display: block;">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <h2>You have finished</h2>
+          <p id="scoreText"></p>
+          <p>Enter your initials</p>
+          <input type="text" id="initials" />
+          <button type="submit" class="btn btn-primary" id="submit">
+            Submit
+          </button>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- Optional JavaScript -->
+    <script src="assets/js/script.js"></script>
+  
+  </body>
+</html>
